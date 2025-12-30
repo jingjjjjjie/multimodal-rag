@@ -1,6 +1,10 @@
-fitz
+PyMuPDF
 torch
 numpy
-langchain
+langchain-core==0.3.33 
+langchain-openai==0.3.3 
+langchain-community==0.3.16
 transformers
 pillow
+scikit-learn
+faiss-cpu
