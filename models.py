@@ -13,6 +13,7 @@ load_dotenv()
 def initialize_qwen_multimodal_api():
     llm = ChatOpenAI(
         model="qwen-vl-plus",
+        temperature = os.getenv("TEMPERATURE"),
         api_key=os.getenv("QWEN_API_KEY"),
         base_url="https://dashscope.aliyuncs.com/compatible-mode/v1"
     )
